@@ -28,7 +28,9 @@ module CachesPageWithHost
         when String
           options
         else
-          request.path
+          # request.path do not contain trailing slash at the end of path,
+          # but request.env['REQUEST_URI'] does contain trailing slash
+          URI(request.env['REQUEST_URI']).path
       end
       if (type = Mime::LOOKUP[self.content_type]) && (type_symbol = type.symbol).present?
         extension = ".#{type_symbol}"
