@@ -4,6 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'caches_page_with_host/version'
 
 Gem::Specification.new do |gem|
+  gem.license       = "MIT"
   gem.name          = "caches_page_with_host"
   gem.version       = CachesPageWithHost::VERSION
   gem.authors       = ["Andrey"]
