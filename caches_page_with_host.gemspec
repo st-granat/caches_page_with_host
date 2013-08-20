@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["railscode@gmail.com"]
   gem.description   = "Caches Page with current host to public/kesh folder. Include nginx for example config"
   gem.summary       = "Caches Page with current host to public/kesh folder. Include nginx for example config"
-  gem.homepage      = "https://github.com/vav/caches_page_with_host"
+  gem.homepage      = "https://github.com/st-granat/caches_page_with_host"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
